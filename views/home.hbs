@@ -1,0 +1,31 @@
+{{> header }}
+    <!-- se llama a la plantilla navbar-->
+    {{> navbar }}
+                <!-- se crea un jumbotron-->
+              <div class="jumbotron">
+                    <!-- se llama a la helper capitalizar y se le envia el nombre-->
+                    
+                    <h1>CLIENTES</h1>
+                   
+                  </div>
+        <div ></div>
+<div >  
+        <div class="row">
+          <div class="col-sm">
+<table >
+  <tr>
+    <th> Imagen </th><th>Nombre </th><th>Telefono</th><th>Celular</th><th>email</th>
+  </tr>
+{{#each usu}}
+  <tr>  
+     <td style="width: 30%;"><img src="{{src}}" height="50%" width="40%" style="border: 0;"></td><td style="widgth: 225px;">{{nombre}} </td><td >{{telefono}}</td><td>{{celular}}</td><td>{{email}}</td>
+     
+  </tr>   
+
+{{/each}}
+</table>
+          </div>
+        </div>
+</div>
+</div>
+<!-- se llama a la plantilla footer-->
